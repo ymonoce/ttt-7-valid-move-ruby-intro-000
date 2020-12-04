@@ -1,4 +1,11 @@
 # code your #valid_move? method here
+def valid_move? (board, index)
+board[index].between?(0,8)
+end
 
+# define method with parameters board array and index number on board array
+def position_taken? (board, index)
 
-# re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
+# index number on board array is equal to X or O this will return true, anything else will return false
+  board[index] == "X" || board[index] == "O"
+end
